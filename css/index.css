@@ -104,6 +104,7 @@ main .text .footer .footer-social.is-active {
   left: -20px;
   right: -20px;
   background-color: var(--Very-Dark-Grayish-Blue);
+  opacity: 95%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -126,4 +127,10 @@ main .text .footer .button-container {
   margin-right: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+main .text .footer .button-container.is-active {
+  background-color: var(--Desaturated-Dark-Blue);
+}
+main .text .footer .button-container.is-active path {
+  fill: var(--Light-Grayish-Blue);
 }
