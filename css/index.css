@@ -54,48 +54,51 @@ main .text {
 main .text h4 {
   text-align: start;
   font-size: 17px;
+  padding: 0 7px;
 }
 main .text p {
   text-align: start;
   line-height: 22px;
   color: var(--Desaturated-Dark-Blue);
+  padding: 0 7px;
 }
-main .footer {
+main .text .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
-main .footer .footer-text {
-  margin-left: 5px;
+main .text .footer .footer-text {
+  margin-left: 0px;
   margin-right: 50px;
+  text-align: start;
 }
-main .footer .footer-text h3 {
+main .text .footer .footer-text h3 {
   margin: 0;
   white-space: nowrap;
   color: var(--Very-Dark-Grayish-Blue);
   margin-bottom: 5px;
 }
-main .footer .footer-text h5 {
+main .text .footer .footer-text h5 {
   margin: 3px 0 10px 0;
   color: var(--Desaturated-Dark-Blue);
   line-height: 18px;
 }
-main .footer figure {
+main .text .footer figure {
   width: 50px;
   height: 50px;
 }
-main .footer figure img {
-  margin-left: -5px;
+main .text .footer figure img {
+  width: 40px;
   height: 40px;
   border-radius: 50%;
 }
-main .footer .footer-social {
+main .text .footer .footer-social {
   display: none;
 }
-main .footer .button-container {
+main .text .footer .button-container {
   background-color: var(--Light-Grayish-Blue);
   padding: 9px;
   border-radius: 50%;
+  margin-right: 20px;
 }
