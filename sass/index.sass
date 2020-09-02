@@ -12,7 +12,7 @@ $font-size: var(--font-size)
      --Light-Grayish-Blue: #ECF2F8
      --font-family: 'Manrope', sans-serif
      --font-size: 13px
-
+// -------------------Reset css-------------------
 html
      box-sizing: border-box
      font-family: $font-family
@@ -20,11 +20,73 @@ html
      scroll-behavior: smooth
 *,
 *:before
-*:after 
+*:after
      box-sizing: inherit
-body   
+body
      margin: 0
      overflow-x: hidden
-img  
+     background-color: $Light-Grayish-Blue
+img
      max-width: 100%
      height: auto
+
+// -------------Main content of css-------------
+main
+     width: 340px
+     height: 90%
+     margin:  10px auto
+     box-shadow: 0 0 4px 1px $Grayish-Blue
+     border-radius: 10px
+     overflow: hidden
+     background-color: white
+     figure
+          margin: 0
+          width: 100%
+          img
+     .text
+          text-align: center
+          margin-top: -50px
+          background-color: white
+          position: relative
+          z-index: 20
+          padding: 20px
+          color: $very-dark-grayish-blue
+          h4
+               text-align: start
+               font-size: 17px
+          p
+               text-align: start
+               line-height: 22px
+               color: $Desaturated-Dark-Blue
+     .footer
+          display: flex
+          justify-content: center
+          align-items: center
+          padding: 0 40px
+          margin-bottom: 10px
+          .footer-text
+               margin-left: 5px
+               margin-right: 50px
+               h3
+                    margin: 0
+                    white-space: nowrap
+                    color: $very-dark-grayish-blue
+                    margin-bottom: 5px
+
+               h5
+                    margin: 3px 0 10px 0
+                    color: $Desaturated-Dark-Blue
+                    line-height: 18px
+          figure
+               width: 50px
+               height: 50px
+               img
+                    margin-left: -5px
+                    height: 40px
+                    border-radius: 50%
+          .footer-social
+               display: none
+          .button-container
+               background-color: $Light-Grayish-Blue
+               padding: 9px
+               border-radius: 50%

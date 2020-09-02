@@ -21,9 +21,81 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: var(--Light-Grayish-Blue);
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  width: 340px;
+  height: 90%;
+  margin: 10px auto;
+  box-shadow: 0 0 4px 1px var(--Grayish-Blue);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+}
+main figure {
+  margin: 0;
+  width: 100%;
+}
+main .text {
+  text-align: center;
+  margin-top: -50px;
+  background-color: white;
+  position: relative;
+  z-index: 20;
+  padding: 20px;
+  color: var(--Very-Dark-Grayish-Blue);
+}
+main .text h4 {
+  text-align: start;
+  font-size: 17px;
+}
+main .text p {
+  text-align: start;
+  line-height: 22px;
+  color: var(--Desaturated-Dark-Blue);
+}
+main .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 10px;
+}
+main .footer .footer-text {
+  margin-left: 5px;
+  margin-right: 50px;
+}
+main .footer .footer-text h3 {
+  margin: 0;
+  white-space: nowrap;
+  color: var(--Very-Dark-Grayish-Blue);
+  margin-bottom: 5px;
+}
+main .footer .footer-text h5 {
+  margin: 3px 0 10px 0;
+  color: var(--Desaturated-Dark-Blue);
+  line-height: 18px;
+}
+main .footer figure {
+  width: 50px;
+  height: 50px;
+}
+main .footer figure img {
+  margin-left: -5px;
+  height: 40px;
+  border-radius: 50%;
+}
+main .footer .footer-social {
+  display: none;
+}
+main .footer .button-container {
+  background-color: var(--Light-Grayish-Blue);
+  padding: 9px;
+  border-radius: 50%;
 }
