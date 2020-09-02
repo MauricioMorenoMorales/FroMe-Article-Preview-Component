@@ -63,6 +63,7 @@ main .text p {
   padding: 0 7px;
 }
 main .text .footer {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,9 +97,33 @@ main .text .footer figure img {
 main .text .footer .footer-social {
   display: none;
 }
+main .text .footer .footer-social.is-active {
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .text .footer .footer-social.is-active h4 {
+  color: var(--Grayish-Blue);
+  font-weight: 100;
+  letter-spacing: 6px;
+  margin: 10px;
+}
+main .text .footer .footer-social.is-active img {
+  margin-right: 10px;
+  height: 25px;
+}
 main .text .footer .button-container {
+  position: relative;
   background-color: var(--Light-Grayish-Blue);
   padding: 9px;
   border-radius: 50%;
   margin-right: 20px;
+  cursor: pointer;
+  z-index: 1000;
 }

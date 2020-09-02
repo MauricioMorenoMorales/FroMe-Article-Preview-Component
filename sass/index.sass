@@ -61,6 +61,7 @@ main
                color: $Desaturated-Dark-Blue
                padding: 0 7px
           .footer
+               position: relative
                display: flex
                justify-content: space-between
                align-items: center
@@ -87,8 +88,29 @@ main
                          border-radius: 50%
                .footer-social
                     display: none
+                    &.is-active
+                         position: absolute
+                         top: -20px
+                         bottom: -20px
+                         left: -20px
+                         right: -20px
+                         background-color: $very-dark-grayish-blue
+                         display: flex
+                         justify-content: flex-start
+                         align-items: center
+                         h4  
+                              color: $Grayish-Blue
+                              font-weight: 100
+                              letter-spacing: 6px
+                              margin: 10px
+                         img  
+                              margin-right: 10px
+                              height: 25px
                .button-container
+                    position: relative
                     background-color: $Light-Grayish-Blue
                     padding: 9px
                     border-radius: 50%
                     margin-right: 20px
+                    cursor: pointer
+                    z-index: 1000
