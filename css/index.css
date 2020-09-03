@@ -134,3 +134,23 @@ main .text .footer .button-container.is-active {
 main .text .footer .button-container.is-active path {
   fill: var(--Light-Grayish-Blue);
 }
+
+@media screen and (min-width: 850px) {
+  main {
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    width: 700px;
+    height: 280px;
+  }
+  main > figure {
+    overflow: hidden;
+  }
+  main > figure img {
+    height: 300px;
+    object-fit: cover;
+    object-position: -10px 0px;
+  }
+  main .text {
+    padding-top: 50px;
+  }
+}

@@ -42,7 +42,6 @@ main
      figure
           margin: 0
           width: 100%
-          img
      .text
           text-align: center
           margin-top: -50px
@@ -99,12 +98,12 @@ main
                          display: flex
                          justify-content: flex-start
                          align-items: center
-                         h4  
+                         h4
                               color: $Grayish-Blue
                               font-weight: 100
                               letter-spacing: 6px
                               margin: 10px
-                         img  
+                         img
                               margin-right: 10px
                               height: 25px
                .button-container
@@ -119,3 +118,18 @@ main
                          background-color: $Desaturated-Dark-Blue
                          path
                               fill: $Light-Grayish-Blue
+
+@media screen and (min-width: 850px)
+     main
+          display: grid
+          grid-template-columns: 3fr 4fr
+          width: 700px
+          height: 280px
+          & > figure
+               overflow: hidden
+               img
+                    height: 300px
+                    object-fit: cover
+                    object-position: -10px 0px
+          .text
+               padding-top: 50px
